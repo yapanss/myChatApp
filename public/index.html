@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>my chat app</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/exo.css">
+
+</head>
+<body>
+	<div class="container mt-3">
+		<header>
+			<h1 class="text-center mb-5">My Chat App</h1>
+		</header>
+		<main class="row">
+			<section class="col-7" id="messageSection">
+				
+				<div>
+					<h2 class="mb-2">Liste de tâches <small></small></h2>
+					<ul id="message"></ul>
+				</div>
+			</section>
+			<section class="col-5">
+				<h2 class="mb-2">Utilisateurs connectés</h2>
+				<ul id="users"></ul>
+			</section>
+		</main>
+		<aside class="row">
+			<div id="notification" class="col-5 offset-7"></div>
+		</aside>
+		<form>
+			<div class="row">
+				<div class="col-8">
+					<input type="text" name="message" id="message_input" class="form-control" placeholder="Nouvelle tâche">
+				</div>
+				<div class="col-4">
+					<button type="button" class="btn btn-success" onclick="sendMessage()">Send</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<!--<script src="app.js"></script>-->
+	<script src="/exo.js"></script>
+</body>
+</html>

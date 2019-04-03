@@ -1,0 +1,16 @@
+{
+  "name": "chatapp",
+  "version": "0.1.0",
+  "description": "first usage of socket.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Assi Yapo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}
